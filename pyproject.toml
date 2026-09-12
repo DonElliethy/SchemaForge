@@ -1,0 +1,21 @@
+[project]
+name = "schemaforge"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "DonElliethy", email = "abdelrhman.osama.elliethy1@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pydantic>=2.13.5",
+    "pytest>=9.1.1",
+    "sqlglot>=30.17.0",
+]
+
+[project.scripts]
+schemaforge = "schemaforge:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
